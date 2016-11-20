@@ -16,6 +16,8 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.impl;
 
+import android.database.sqlite.SQLiteDatabase;
+
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -55,5 +57,6 @@ public class InMemoryTransactionDAO implements TransactionDAO {
         // return the last <code>limit</code> number of transaction logs
         return transactions.subList(size - limit, size);
     }
+
 
 }
