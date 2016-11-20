@@ -108,7 +108,7 @@ public class ManageExpensesFragment extends Fragment implements View.OnClickList
                         AlertDialog.Builder builder=new AlertDialog.Builder(this.getActivity());
                         builder.setCancelable(true);
                         builder.setTitle("Notice");
-                        builder.setMessage("AC No:"+selectedAccount+"was updated successfully");
+                        builder.setMessage("AC No:"+selectedAccount+" was updated successfully");
                         builder.show();
                     } catch (InvalidAccountException e) {
                         new AlertDialog.Builder(this.getActivity())

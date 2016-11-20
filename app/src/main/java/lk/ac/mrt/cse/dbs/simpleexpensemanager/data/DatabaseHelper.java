@@ -12,7 +12,7 @@ import java.io.Serializable;
  */
 public class DatabaseHelper extends SQLiteOpenHelper implements Serializable
 {
-    private static final String DATABASE_NAME="DB_DEMO";
+    private static final String DATABASE_NAME="140137M";
     private static final String TableTrans ="Transact";
     private static DatabaseHelper databaseHelper;
 
