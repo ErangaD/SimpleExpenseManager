@@ -18,6 +18,7 @@ package lk.ac.mrt.cse.dbs.simpleexpensemanager.ui;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -97,6 +98,11 @@ public class AddAccountFragment extends Fragment implements View.OnClickListener
                 if (currentExpenseManager != null) {
                     currentExpenseManager.addAccount(accountNumStr, bankNameStr, accountHolderStr,
                             Double.parseDouble(initialBalanceStr));
+                    AlertDialog.Builder builder=new AlertDialog.Builder(this.getActivity());
+                    builder.setTitle("Information");
+                    builder.setCancelable(true);
+                    builder.setMessage("New Account was added successfully");
+                    builder.show();
                 }
                 cleanUp();
                 break;
